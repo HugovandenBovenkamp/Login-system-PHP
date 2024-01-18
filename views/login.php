@@ -6,6 +6,7 @@ if (isset($_SESSION['loggedInUser'])) {
 <!--Login form-->
 <div class="login-form">
     <h2>Log in your account here</h2>
+    <!--  Form action with get method that contains login -->
     <form action="index.php?action=login" method="post">
         <label for="email">Your username:</label>
         <input type="text" name="email" id="email">

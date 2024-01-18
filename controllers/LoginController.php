@@ -8,17 +8,26 @@ require_once 'models/user.php';
 class LoginController
 {
 
+
+    // This function makes sure that the user is logged in
     public function login()
     {
+        //First the function contains a pdo variable that refers to the db.php file and makes the connection to the database.
         $pdo = db();
 
+        // Gets the email and password values with the post method. The post method does not require a check (if $_POST), because this is handled in the index.php file.
         $email = $_POST['email'];
         $password = $_POST['pwd'];
+
+        // The isset is used to check if the $email and $password input values are not empty
         if (isset($email) && isset($password)) {
+
+            // Here the input values are filtered using prepared statements and are executed.
             $stmt = $pdo->prepare("SELECT * FROM users WHERE email = ? AND password = ?");
             $stmt->execute([$email, $password]);
             $user = $stmt->fetch();
 
+            //Check if the user exists and is not emtpy
             if ($user !== false && !is_null($user)) {
                 $_SESSION['loggedInUser'] = $user['id'];
             } else {
@@ -26,7 +35,7 @@ class LoginController
                 dd('User has not been found');
             }
         }
-
+        //This redirects the user to the login page, function made in functions.php
         redirect('login');
     }
 }

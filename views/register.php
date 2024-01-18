@@ -1,6 +1,7 @@
 <!--Register form-->
 <div class="register-form">
     <h1>Register your account here</h1>
+    <!--  Form action with get method that contains register -->
     <form action="index.php?action=register" method="post">
         <label for="Email-address">E-mail address:</label>
         <input type="email" name="email" id="Email-address">

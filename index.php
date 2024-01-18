@@ -9,6 +9,7 @@ require_once 'functions.php';
 // Checks GET request and sends user to login if empty
 if (!isset($_GET['action'])) { $_GET['action'] = 'login'; }
 
+//Instantiate the Login and register controllers.
 $loginController = new LoginController();
 $registerController = new RegisterController();
 
@@ -22,4 +23,5 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $registerController->register();
     }
 }
+
 require_once "views/base.php";

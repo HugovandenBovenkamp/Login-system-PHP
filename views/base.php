@@ -13,7 +13,7 @@
 
 <?php
 
-// Dynamically loads view pages
+// Dynamically loads view pages and adds .php to the correct GET value.
 require_once $_GET['action'] . '.php';
 
 if (isset($_SESSION['flash'])) {
