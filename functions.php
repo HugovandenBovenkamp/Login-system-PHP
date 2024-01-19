@@ -4,10 +4,11 @@
 // function that redirects user to the corresponding get parameter
 function redirect($action): void
 {
-    header("location: index.php?action=".$action);
+    header("Location: index.php?action=".$action);
+    exit;
 }
 
-//todo: explain what this function does with comment
+// Gets the user ID and returns user object
 function getLoggedInUser(int $loggedInUserId): User
 {
     $pdo = db();
@@ -18,7 +19,7 @@ function getLoggedInUser(int $loggedInUserId): User
     return new User($user['id'], $user['email'], $user['password']);
 }
 
-// function that dumps the data in the die function to the screen, for debugging.
+// function that dumps the data in the "die" function to the screen, for debugging.
 function dd($var): void
 {
     die(var_dump($var));

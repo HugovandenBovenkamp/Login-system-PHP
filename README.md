@@ -7,9 +7,11 @@
 <ul>
     <li>The user can Register and create an account </li>
     <li>The user can Login with their already created user account </li>
+    <li>The user can Log out of the application</li>
     <li>If a user forgets their password, they can create a new password and replace it with their current one. <br>(password recovery)</li>
     <li>The application uses PDO for connecting to the database and SQL injection.</li>
     <li>The application is made using the MVC design pattern.</li>
+    <li>Have a error 404 page that shows up when something is wrong</li>
 </ul>
 
 <h2>Challenges:</h2>

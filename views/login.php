@@ -16,4 +16,11 @@ if (isset($_SESSION['loggedInUser'])) {
 
         <button type="submit">Login Here</button>
     </form>
+
+    <div class="login-form">
+        <h2>Log in your account here</h2>
+        <!--  Form action with get method that contains login -->
+        <form action="index.php?action=login" method="post">
+            <button type="submit">Logout Here</button>
+        </form>
 </div>

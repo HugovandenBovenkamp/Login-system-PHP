@@ -27,12 +27,12 @@ class LoginController
             $stmt->execute([$email, $password]);
             $user = $stmt->fetch();
 
-            //Check if the user exists and is not emtpy
+            //Check if the user exists and is not empty
             if ($user !== false && !is_null($user)) {
                 $_SESSION['loggedInUser'] = $user['id'];
-            } else {
-                //Todo: session flash;
-                dd('User has not been found');
+            }
+            else {
+                $_SESSION['flash'] = "Username is not correct ";
             }
         }
         //This redirects the user to the login page, function made in functions.php
