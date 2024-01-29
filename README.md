@@ -10,6 +10,7 @@
     <li>The user can Log out of the application</li>
     <li>If a user forgets their password, they can create a new password and replace it with their current one. <br>(password recovery)</li>
     <li>The application uses PDO for connecting to the database and SQL injection.</li>
+    <li>The application uses password hashing</li>
     <li>The application is made using the MVC design pattern.</li>
 </ul>
 

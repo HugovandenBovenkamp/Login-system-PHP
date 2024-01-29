@@ -20,7 +20,9 @@ if (isset($_SESSION['loggedInUser'])) {
     <div class="login-form">
         <h2>Log in your account here</h2>
         <!--  Form action with get method that contains login -->
-        <form action="index.php?action=login" method="post">
+        <form action="index.php?action=logout" method="post">
             <button type="submit">Logout Here</button>
+            <a href="index.php?action=register">Register here</a>
+            <a href="index.php?action=forgotPassword">Forgot password?</a>
         </form>
 </div>
