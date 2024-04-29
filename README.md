@@ -32,7 +32,4 @@
 <ul>
     <li>The first issue I encountered was making a good folder structure that contains the MVC structure. After a google search I started creating the correct folders like Models, Views and Controllers. What I noticed was that it is necessary to put the index.php and functions.php in the root.</li>
     <li>My second issue / thought was : "Where do I start?". I started making an index.php file and began making two forms and worked up from there. Making the proper controller files and view pages.</li>
-    <li>My third issue was regarding routing, I never did this before, so I spend a good amount of time googling and reading about routing. I started to realize that routing is probably a good idea to put in the "index.php" file. The login and register controllers are instantiated in the index file.</li>
-
-<h3></h3>
-<p></p>
+    <li>My third issue was regarding routing, I never did this before, so I spend a good amount of time googling and reading about routing. I started to realize that routing is probably a good idea to put in the "index.php" file. The login and register controllers are instantiated in the index file.</li></ul>
